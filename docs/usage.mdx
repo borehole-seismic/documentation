@@ -1,0 +1,168 @@
+---
+sidebar_position: 4
+id: usage
+title: Usage
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Using the Picking Tool
+
+## Locating and Selecting Files for Analysis
+
+Now that you have set up your folders, you can start importing your data into the tool.
+
+1. **Import Folder**:
+   - Select `File` > `Import Folder` from the toolbar or Click on the folder icon with a plus sign.
+   - Navigate to the folder directory where your .mat files are located.
+
+     ### File Selection Process
+     Choose the instructions relevant to your operating system:
+
+      <details>
+      <summary>For Mac Users</summary>
+
+      - **Drag and Drop**: Drag the desired folder into the dialog box.
+
+      </details>
+
+      <details>
+      <summary>For Windows Users</summary>
+
+        - **Folder Selection**: Select the desired folder and click `open`
+
+      </details>
+
+
+2. **Accessing Files**:
+   - The selected folder will appear on the left side of the screen.
+   - Double-click on the folder to view the corresponding files.
+   - Double-click on a file to open it.
+   - You should now see a seismogram on the Trace view.
+
+    ![File Access](/img/tool_folders.png)
+
+
+
+
+
+## Navigating the Interface
+Learn how to move around the tool's interface for efficient data analysis.
+
+
+### Zooming In and Out
+- **Zoom-In**: Click and drag from left to right to create a zoom box over the desired area.
+- **Zoom-Out**: Click and drag from right to left to zoom out from the current view.
+- **Mouse Scroll**: Alternatively, use the mouse wheel for gradual zooming in or out.
+
+
+### Moving the Seismogram
+- **Navigation**: Press `CTRL` and click on the image to move in any direction.
+:::info NOTE
+Mac users-  use `command` instead of `CTRL`
+:::
+
+## Understanding Components
+The seismogram consists of three components, each represented by a color:
+- **Red**: Horizontal 1
+- **Gray**: Horizontal 2
+- **Blue**: Vertical
+
+### Component Selection
+- **Toolbar Icons**: Toggle components on the toolbar.
+
+  ![Component View](/img/comp_view.png)
+
+- **Keyboard Shortcuts**: Use `CTRL + 1/2/3` to toggle Red, Gray, and Blue components respectively.
+
+
+
+## Wave Picking Process
+
+### Selecting Wave Types
+Utilize an interactive tab system to navigate between P, S, and SS wave picking instructions:
+
+<Tabs>
+  <TabItem value="pwave" label="P-Wave">
+    - **First Arrival**: P-Waves are the fastest and appear first on the seismogram.
+    - **Characteristics**: Look for sharp, abrupt changes indicating the start of seismic activity.
+    - **Activation**: Press `ALT + 1` to select P-Wave.
+        
+        ![Component View](/img/p_wave.JPG)
+
+    - **Marking**: Click on two or more traces to mark P-Waves with black plus(+) signs.
+
+        ![Component View](/img/pwave_half.JPG)
+
+    - **Confirming Picks**: Press `ENTER`. Unselected traces will be auto-populated.
+
+        ![Component View](/img/pwave_com.JPG)
+
+    - **Changing Picks**: To adjust a pick, click on the trace again.
+    - **Moving Picks**: Press `CTRL` and drag the mouse to move a pick.
+    - **Removing Picks**: Press `ESC` to remove all picks.
+    - **Deleting All Picks**: Press `SHIFT + 1` to delete all P-Wave picks.
+    
+    <!-- ![P-Wave Picking](/img/p_wave_picking.png) -->
+  </TabItem>
+
+  <TabItem value="swave" label="S-Wave">
+    - **Following P-Waves**: S-Waves arrive after P-Waves.
+    - **Characteristics**: These waves are slower and have a more pronounced, wavy pattern.
+    - **Activation**: Press `ALT + 2` for S-Wave.
+
+        ![Component View](/img/s_wave.JPG)
+
+    - **Marking**: Click on two or more traces to mark S-Waves with black X's.
+
+        ![Component View](/img/swave_half.JPG)
+
+    - **Confirming Picks**: Press `ENTER`. Unselected traces will be auto-populated.
+
+        ![Component View](/img/swave_com.JPG)
+
+    - **Changing Picks**: To adjust a pick, click on the trace again.
+    - **Moving Picks**: Press `CTRL` and drag the mouse to move a pick.
+    - **Removing Picks**: Press `ESC` to remove all picks.
+    - **Deleting All Picks**: Press `SHIFT + 2` to delete all P-Wave picks.
+    
+    <!-- ![S-Wave Picking](/img/s_wave_picking.png) -->
+  </TabItem>
+
+  <TabItem value="sswave" label="SS-Wave">
+    - **Echo of S-Waves**: SS-Waves are reflections of S-Waves.
+    - **Identifying**: Look for patterns repeating after the S-Waves, often with reduced amplitude.
+    - **Activation**: Press `ALT + 3` for SS-Wave.
+
+        ![Component View](/img/ss_wave.JPG)
+
+    - **Marking**: Click on two or more traces to mark SS-Waves with black O's. To pick SS-waves, turn on only the red component.
+
+        ![Component View](/img/sswave_half.JPG)
+
+    - **Confirming Picks**: Press `ENTER`. Unselected traces will be auto-populated.
+
+        ![Component View](/img/sswave_com.JPG)
+
+    - **Changing Picks**: To adjust a pick, click on the trace again.
+    - **Moving Picks**: Press `CTRL` and drag the mouse to move a pick.
+    - **Removing Picks**: Press `ESC` to remove all picks.
+    - **Deleting All Picks**: Press `SHIFT + 3` to delete all P-Wave picks.
+    
+    <!-- ![SS-Wave Picking](/img/ss_wave_picking.png) -->
+  </TabItem>
+</Tabs>
+
+## Saving and Proceeding to the Next File
+- **Saving**: Click the arrow on the toolbar or press `CTRL + >` to save.
+
+        ![Component View](/img/next_btn.png)
+
+- **Confirmation**: A dialog box will appear. Click 'Yes' or press `ENTER` to save.
+
+        ![Component View](/img/tool_save.PNG)
+
+<!-- ![File Saving](/img/file_saving.png) -->
+
+Files are automatically updated in the `01_Triggered_Data` folder and copied to `02_TimePicked_Data`.
+
