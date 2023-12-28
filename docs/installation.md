@@ -69,16 +69,19 @@ sidebar_position: 2
       - Follow the on-screen instructions to complete the download and installation.
 
   ## Download Picking Tool:
+  
+  - Use this **[link](https://arbhs.sharepoint.com/:f:/s/TeamBHS/EvtebEXEyWJHuam1pDv_eksBzVfVACt9WXPXZGWqAcn_Ww?e=a68WmD)** to download the .jar file.
 
-  - **Download the .jar file from our portal:**
+  <!-- - **Download the .jar file from our portal:**
       - Visit this **[link](https://www.boreholeseismic.biz/projects/internal/reports/picking-tool-support#6.5.2)**.
 
-        ![Package Installation Windows](/img/package_installer_windows.png)
+
+        ![Package Installation Windows](/img/package_installer_windows.png) -->
 
   ## Open the Picking Tool:
 
   - **Double Click the Picking Tool Icon:**
-      - Locate the downloaded Picking tool .jar file and double click to open.
+      - Locate the downloaded Picking tool .jar file by navigating to `BHS Picking6.5.2.app->Contents->Java->Picking-tool-6.5.2.jar` and double click to open.
 
         ![Picking Tool Icon](/img/tool_icon_win.JPG)
 
