@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportaldoc=self.webpackChunkportaldoc||[]).push([[982],{7405:(e,o,t)=>{t.r(o),t.d(o,{default:()=>r});var n=t(7294),c=t(6550),s=t(5893);const r=()=>{const e=(0,c.k6)();return(0,n.useEffect)((()=>{localStorage.removeItem("isLoggedIn"),e.push("/documentation/login")}),[e]),(0,s.jsx)("div",{children:"Signing out..."})}}}]);
