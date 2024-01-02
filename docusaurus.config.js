@@ -4,7 +4,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Welcome to Borehole Seismic\'s Documentation Hub',
-  //tagline: 'It is the central repository for all essential information related to our company. Here, we bring together a comprehensive collection of documents and resources, offering quick and seamless access to the insights you need. Dive into a well-organized repository that reflects our commitment to clarity, accessibility, and excellence in documentation.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -42,11 +41,7 @@ const config = {
         //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
          },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+ 
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -58,28 +53,21 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      //image: 'img/docusaurus-social-card.jpg',
+      
       navbar: {
         logo: {
           alt: 'My Site Logo',
           src: 'img/BoreholeLogo.png',
           srcDark: 'img/BoreholeLogo_1.png'
         },
-      //component: CustomNavbar,
+
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          //{to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+  
+          {
+            label: 'Sign Out',
+            to: '/signout', 
+            position: 'right',
+          },
         ],
       },
       footer: {  
@@ -90,6 +78,23 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+
+      // plugins: [
+      //   function myPlugin(context, options) {
+      //     return {
+      //       name: 'redirect-plugin',
+      //       async contentLoaded({ actions }) {
+      //         const { createRedirect } = actions;
+      //         createRedirect({
+      //           from: '/documentation/',
+      //           to: '/documentation/login',
+      //           isPermanent: true,
+      //         });
+      //       },
+      //     };
+      //   },
+      // ]
+    
     }),
 };
 

@@ -1,4 +1,8 @@
 import clsx from 'clsx';
+import React, {useEffect} from 'react';
+import { useHistory } from '@docusaurus/router';
+import LoginPage from './login';
+import { Redirect } from '@docusaurus/router'; 
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -27,6 +31,15 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const history = useHistory();
+  useEffect(() => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+  if (!isLoggedIn) {
+    // return <LoginPage />
+    history.push('/documentation/login'); 
+    }
+  }, [history]);
+  
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
@@ -39,3 +52,4 @@ export default function Home() {
     </Layout>
   );
 }
+
