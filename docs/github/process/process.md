@@ -85,6 +85,13 @@ This command adds all new and changed files to the staging area, preparing them 
 git add .
 ```
 
+#### Commit the changes
+This command saves your staged changes along with a descriptive message. The message should briefly describe what changes were made in this commit.
+
+```bash
+git commit -m "commit message"
+```
+
 #### Connect to the remote repository
 This command links your local repository to the GitHub repository (remote repository).
 
@@ -93,12 +100,6 @@ git remote add origin "your_repository_url"
 ```
 Replace "your_repository_url" with the URL of your GitHub repository.
 
-#### Commit the changes
-This command saves your staged changes along with a descriptive message. The message should briefly describe what changes were made in this commit.
-
-```bash
-git commit -m "commit message"
-```
 
 #### Push the code
 This command sends your committed changes to GitHub, updating your remote repository.

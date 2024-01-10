@@ -57,6 +57,8 @@ Creating a pull request involves the following steps:
 
 3. **Click on "Pull Request"**: Look for the "Pull Request" or "New Pull Request" button and click it.
 
+      ![pull-request](/img/pull.PNG)
+
 4. **Choose Target Branch**: Select the branch into which you want to merge your changes (usually the main or master branch).
 
 5. **Provide Details**: Add a descriptive title and, if necessary, a description of the changes you're proposing.

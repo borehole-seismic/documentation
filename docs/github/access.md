@@ -6,9 +6,10 @@ title: Access
 
 ## GitHub in Our Company
 
-At Borehole Seismic, we use GitHub to manage our projects. You can access our repositories **[here](https://github.com/BoreholeSeismic)**. 
-
-        ![Repositories](/img/bore_repos.png)
+At Borehole Seismic, we use GitHub to manage our projects. You can access our repositories **[here](https://github.com/BoreholeSeismic)**
+       
+       
+ ![Create_repo](/img/bore_repos.png)
 
 :::tip NOTE
 - Most of our repositories are `private`, meaning you must be a member to view and contribute to the repositories. 

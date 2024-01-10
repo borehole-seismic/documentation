@@ -52,7 +52,7 @@ Congratulations! You have successfully set up Visual Studio Code as your IDE. Yo
 
 6. **Integrating with Git**
    - VSCode has built-in Git support. To utilize this, ensure Git is installed on your system.
-   - If it is not instaled, you can download Git from **[Git Downloads](https://git-scm.com/downloads).**
+   - If it is not installed, you can download Git from **[Git Downloads](https://git-scm.com/downloads).**
    - After installation, you can verify it by opening a command prompt or terminal and typing `git --version`.
   
 ## Next Steps
