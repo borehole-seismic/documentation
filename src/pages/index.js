@@ -35,7 +35,7 @@ export default function Home() {
   useEffect(() => {
   const isLoggedIn = localStorage.getItem('isLoggedIn');
   if (!isLoggedIn) {
-    // return <LoginPage />
+
     history.push('/documentation/login'); 
     }
   }, [history]);
@@ -43,7 +43,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

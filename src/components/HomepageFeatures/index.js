@@ -1,4 +1,3 @@
-
 import React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
@@ -14,14 +13,22 @@ const FeatureList = [
         Click to access the detailed documentation.
       </>
     ),
+    link: '/docs/intro', // This should point to the picking tool documentation
+  },
+  {
+    title: 'Git Hub',
+    description: (
+      <>
+        This explains about using the GitHub efficiently.
+      </>
+    ),
+    link: '/docs/github/intro_git', // This should point to the GitHub documentation
   },
 ];
 
-
-
-function Feature({ title, description}) {
+function Feature({ title, description, link }) { // Add 'link' to the component's parameters
   return (
-    <Link to='/docs/intro' className={clsx('about__card', styles.featureCard)}>
+    <Link to={link} className={clsx('about__card', styles.featureCard)}> 
       <div className={clsx('about__section', styles.featureSection)}>
         <Heading as="h3" className={styles.featureHeader}>
           {title}
@@ -38,11 +45,10 @@ export default function HomepageFeatures() {
       <div className={clsx('container', styles.featureBoxContainer)}>
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature key={idx} {...props} /> // 'props' here contains the 'link' property
           ))}
         </div>
       </div>
     </section>
   );
 }
-
