@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/.git": false
+    },
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false,
+        "**/node_modules": false
+    },
+    "search.useIgnoreFiles": false
+}

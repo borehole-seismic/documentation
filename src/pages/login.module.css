@@ -1,0 +1,116 @@
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+
+  }
+  
+  .logo {
+
+    margin-top: 10px;
+  }
+
+
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3; 
+  }
+  
+
+  .errorMessage {
+    color: #d9534f; 
+    margin-bottom: 15px;
+  }
+  
+  
+  .titleContainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4; 
+}
+
+.loginForm {
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 90%; 
+  max-width: 300px; 
+  box-sizing: border-box;
+  margin-bottom: 50px; 
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd; 
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .loginForm {
+    padding: 20px;
+    margin-bottom: 20px; 
+  }
+
+  .title {
+    font-size: 24px; 
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginForm {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 20px; 
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+}
