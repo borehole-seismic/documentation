@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-github/process/branch_git" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.1">
+<title data-rh="true">About branches | Welcome to Borehole Seismic&#x27;s Documentation Hub</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://borehole-seismic.github.io/documentation/docs/github/process/branch_git"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="About branches | Welcome to Borehole Seismic&#x27;s Documentation Hub"><meta data-rh="true" name="description" content="Branches are a fundamental concept in Git that allow developers to work on different aspects of a project simultaneously without interfering with each other&#x27;s work."><meta data-rh="true" property="og:description" content="Branches are a fundamental concept in Git that allow developers to work on different aspects of a project simultaneously without interfering with each other&#x27;s work."><link data-rh="true" rel="icon" href="/documentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://borehole-seismic.github.io/documentation/docs/github/process/branch_git"><link data-rh="true" rel="alternate" href="https://borehole-seismic.github.io/documentation/docs/github/process/branch_git" hreflang="en"><link data-rh="true" rel="alternate" href="https://borehole-seismic.github.io/documentation/docs/github/process/branch_git" hreflang="x-default"><link rel="stylesheet" href="/documentation/assets/css/styles.4eba5f5a.css">
+<script src="/documentation/assets/js/runtime~main.2cbcaae9.js" defer="defer"></script>
+<script src="/documentation/assets/js/main.2093ffe3.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/documentation/"><div class="navbar__logo"><img src="/documentation/img/BoreholeLogo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/documentation/img/BoreholeLogo_1.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z"><input placeholder="Search" aria-label="Search" class="navbar__search-input"><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><a class="navbar__item navbar__link" href="/documentation/signout">Sign Out</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/documentation/docs/github/intro_git">GitHub</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/docs/github/intro_git">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/docs/github/access_git">Access</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/docs/github/setup_ide">Setting up IDE</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/docs/github/setup_ssh">Setting up SSH</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/documentation/docs/github/process/">Working</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/documentation/docs/github/process/">Using Git</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/documentation/docs/github/process/branch_git">About branches</a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/documentation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">GitHub</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Working</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">About branches</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Branching in Git</h1>
+<p>Branches are a fundamental concept in Git that allow developers to work on different aspects of a project simultaneously without interfering with each other&#x27;s work.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-create-and-work-with-branches">Why Create and Work with Branches?<a href="#why-create-and-work-with-branches" class="hash-link" aria-label="Direct link to Why Create and Work with Branches?" title="Direct link to Why Create and Work with Branches?">​</a></h2>
+<p>Branches offer several benefits in a collaborative development environment:</p>
+<ol>
+<li>
+<p><strong>Isolation</strong>: Branches provide a separate workspace for each feature, bug fix, or task, isolating changes from the main codebase. This prevents conflicts and allows multiple developers to work simultaneously.</p>
+</li>
+<li>
+<p><strong>Risk Mitigation</strong>: By working in branches, developers can experiment and test new ideas without affecting the stability of the main codebase. If an experiment fails, it can be discarded without harming the project.</p>
+</li>
+<li>
+<p><strong>Code Review</strong>: Branches facilitate code review since changes are encapsulated within a specific branch. Reviewers can focus on the changes related to a single feature or bug fix.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="creating-a-new-branch-on-github">Creating a New Branch on GitHub<a href="#creating-a-new-branch-on-github" class="hash-link" aria-label="Direct link to Creating a New Branch on GitHub" title="Direct link to Creating a New Branch on GitHub">​</a></h2>
+<ol>
+<li>
+<p><strong>Navigate to Repository</strong>: Go to the main page of the GitHub repository you want to work in.</p>
+</li>
+<li>
+<p><strong>Access Branches</strong>: On the left-hand side, in the file tree view, select the branch dropdown menu. Click &quot;View all branches&quot; from the dropdown menu.</p>
+<p><img loading="lazy" alt="Screenshot of the file tree view for a repository" src="/documentation/assets/images/view_branches-94a44b0c27bc6594c707eb68c32671b5.PNG" width="1421" height="663" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Create a New Branch</strong>: Click the &quot;New branch&quot; button.</p>
+<p><img loading="lazy" alt="Screenshot of the &amp;quot;Branches&amp;quot; page for a repository" src="/documentation/assets/images/branch-684c28824b6cb6f67acfa2b5eafbffc3.PNG" width="2045" height="451" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Name Your Branch</strong>: Under &quot;Branch name,&quot; type a name for your new branch.</p>
+</li>
+<li>
+<p><strong>Choose a Source</strong>: Under &quot;Branch source,&quot; choose where you want your new branch to originate from.</p>
+</li>
+<li>
+<p><strong>Create the Branch</strong>: Finally, click the &quot;Create branch&quot; button to create your new branch.</p>
+</li>
+</ol>
+<h1>Pull Requests in Git</h1>
+<p>Pull requests (PRs) are a fundamental aspect of collaborative development in Git, enabling teams to propose, review, and merge code changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-a-pull-request">What is a Pull Request?<a href="#what-is-a-pull-request" class="hash-link" aria-label="Direct link to What is a Pull Request?" title="Direct link to What is a Pull Request?">​</a></h2>
+<p>A pull request is a request to merge code changes from one branch (usually a feature branch) into another (often the main or master branch). It acts as a mechanism for code review and collaboration, allowing multiple team members to work on separate branches and integrate their changes into a shared codebase systematically.</p>
+<h1>Creating a Pull Request</h1>
+<p>Creating a pull request involves the following steps:</p>
+<ol>
+<li>
+<p><strong>Go to Repository</strong>: Navigate to your GitHub and open the repository where you want to create the pull request.</p>
+</li>
+<li>
+<p><strong>Select Branch</strong>: Ensure you are on the branch containing your changes. If not, switch to the appropriate branch.</p>
+</li>
+<li>
+<p><strong>Click on &quot;Pull Request&quot;</strong>: Look for the &quot;Pull Request&quot; or &quot;New Pull Request&quot; button and click it.</p>
+<p><img loading="lazy" alt="pull-request" src="/documentation/assets/images/pull-2f263073ef99025a7cce30b742300768.PNG" width="1330" height="217" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Choose Target Branch</strong>: Select the branch into which you want to merge your changes (usually the main or master branch).</p>
+</li>
+<li>
+<p><strong>Provide Details</strong>: Add a descriptive title and, if necessary, a description of the changes you&#x27;re proposing.</p>
+</li>
+<li>
+<p><strong>Assign Reviewers</strong>: Specify who should review your pull request by assigning reviewers.</p>
+</li>
+<li>
+<p><strong>Review and Discussion</strong>: Reviewers will examine your code, comment, and suggest improvements. Engage in discussions and make updates as needed.</p>
+</li>
+<li>
+<p><strong>Approval</strong>: Once your changes are approved and all checks pass, you can merge the pull request into the target branch.</p>
+</li>
+<li>
+<p><strong>Merge and Close</strong>: Click the &quot;Merge&quot; button to merge your changes, and your pull request is closed.</p>
+</li>
+</ol>
+<p>Creating a pull request is a crucial step in collaborative development, allowing for code review, discussion, and controlled integration of changes into the main codebase.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/documentation/docs/github/process/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Using Git</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#why-create-and-work-with-branches" class="table-of-contents__link toc-highlight">Why Create and Work with Branches?</a></li><li><a href="#creating-a-new-branch-on-github" class="table-of-contents__link toc-highlight">Creating a New Branch on GitHub</a></li><li><a href="#what-is-a-pull-request" class="table-of-contents__link toc-highlight">What is a Pull Request?</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Borehole Seismic, LLC. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
