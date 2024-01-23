@@ -28,7 +28,7 @@ const FeatureList = [
     title: 'Portal',
     description: (
       <>
-        {/* This explains about using the GitHub efficiently. */}
+         This explains about the features of our portal
       </>
     ),
     link: '/docs/portal/portal_intro', 
